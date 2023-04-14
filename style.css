@@ -10,8 +10,29 @@
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: aliceblue;
+}
+
+
+.form-control {
+  height: 38px;
+  margin-top: 8px;
+}
+
+.btn-outline-success {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: rgb(253, 121, 44);
+  border-color: rgb(253, 121, 44);
+}
+
+.nav-link:hover {
+  color: orange;
 }
 
 .carousel-banner {
@@ -101,10 +122,10 @@
 
 
 .project-title{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   font-family:  'Montserrat Subrayada', sans-serif;
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-align: center;
   color: #EF782A;
 }
@@ -160,18 +181,20 @@
 }
 
 
-.btn-secondary {
-  background-color: #FF8C00;
-  border-radius:30;
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  margin-left: 45%;
-  margin-right: 40%;
-  margin-top: 6%;
-  margin-bottom: 10%;
+.projects{
+  text-align: center;
+
 }
 
+.btn-secondary {
+  background-color: #FF8C00;
+  border-radius: 30px;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  width: 200px;
+  margin: 6% auto 10%;
+}
 
 
 .btn-secondary:hover {
@@ -202,7 +225,7 @@
 .contact .description-contact {
   color: white;
   font-size: 1.2rem;
-
+  font-family: 'Quicksand', sans-serif;
 }
 .contact .title-section{
   color: white;
@@ -210,6 +233,7 @@
   font-weight: bold;
 }
 .contact button {
+  font-family: 'Quicksand', sans-serif;
   color: white;
   font-weight: bold;
   background-color: transparent;
@@ -223,6 +247,57 @@
 .contact button:hover {
   background-color: white;
   color: black ;
+}
+
+/* footer */
+.footer-logo{
+  height: 160px;
+  width: 160px;
+  margin: 1px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.icons-social-media a {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.i img {
+  width: 30px;
+  height: 30px;
+}
+
+.icons-social-media a:hover {
+  background-color: rgb(253, 121, 44);
+  border: 2px solid rgb(42, 146, 231);
+}
+
+.icons-social-media a img {
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s ease-in;
+}
+
+.icons-social-media a:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.icons-social-media a:not(:hover) img {
+  filter: brightness(0) invert(1);
 }
 
 /* media queries */
@@ -246,3 +321,10 @@
   }
 }
   
+@media (max-width: 600px) {
+  .btn-secondary {
+    font-size: 3vw;
+    padding: 0.5rem;
+    margin-bottom: 100px;
+  }
+}

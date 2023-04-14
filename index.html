@@ -16,12 +16,12 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat&family=Montserrat+Subrayada&display=swap" rel="stylesheet">
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -41,24 +45,32 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbar-toggler">
-          <a class="navbar-brand" href="#"><img src="Images/logowhite.svg" width="60px" alt="Logo Webpage"></a>
+          <a class="navbar-brand" href="#"><img src="Images/logowhite.svg" id="home-function" width="150px" alt="Logo Webpage"></a>
           <ul class="navbar-nav d-flex justify-content-center align-items-center">
             <li class="nav-item">
               <a class="nav-link " aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#about-section">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">SERVICES</a>
+              <a class="nav-link" href="#project-section">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#contact-section">CONTACT</a>
             </li>
           </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
       </div>
     </nav>
+
+
+
+  
 
     <!-- carousel -->
     <section>
@@ -98,10 +110,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="Images/me.jpg" alt="about me image">
+            <img src="Images/me.jpg"  id="about-section" alt="about me image">
           </div>
           <div class="col-md-8">
-            <img src="Images/AboutMe.svg" alt="about me title" class="about-me-title">
+            <img src="Images/AboutMe.svg"  alt="about me title" class="about-me-title">
             <p class="description">
               Industrial & Interactive Media Designer, with an affinity towards the area of production and development of products & strategies, with interests in Brand creation, UX/UI, web design, furniture design, 3D Modeling and rendering; with the ability to generate innovative ideas for the creation and improvement of objects, additionally, knowledge about materials, their properties and industrial processes.
             </p>
@@ -112,13 +124,13 @@
 
     <!-- projects -->
 
-    <h2 class="project-title">PROJECTS</h2>
+    <h2 class="project-title" id="project-section">PROJECTS</h2>
 
     <section class="projects">
       <div class="card mb-3 float-end" style="max-width: 90%;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="Images/project1.png" class="img-fluid" alt="Technology device lights">
+            <img src="Images/project1.png"  class="img-fluid" alt="Technology device lights">
           </div>
           <div class="col-md-8">
             <div class="card-body orange-bg">
@@ -191,15 +203,14 @@
             <div class="col-12 col-md-4 title-section">
               Let's talk!
             </div>
-            <div class="col-12 col-md-4 description-contact">
-              Contact me if you are interested in any of my design skills... Let's bring your vision to life. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+            <div class="col-12 col-md-4 description-contact"> Contact me if you are interested in any of my design skills... Let's bring your vision to life. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                 <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
               </svg>
             </div>
             <div class="col-12 col-md-4">
               <a href="mailto: santilo1218@gmail.com">
-                <button type="button"> Contact <br>  
+                <button type="button" id="contact-section"> Contact <br>  
                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
                     <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
                     <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
@@ -215,10 +226,30 @@
 
     </section>
     
+
+    <!-- Footer -->
+    <footer class="dark d-flex flex-column align-items-center justify-content-center">
+      <a href="#home-function">
+        <img class="footer-logo" src="Images/logowhite2.svg" alt="brand logo">
+      </a>
+      <p class="footer-text text-center" >  <br> Improving people's lives, solving problems <br>and creating unforgettable experiences. </p>
+      <div class="icons-social-media d-flex flex-wrap align-items-center justify-content-center"> 
+        <a href="https://lope0207.myportfolio.com/work" target="_blank" rel="noopener noreferrer" class="i"> <img src="Images/Photography_logo.png" alt="camera icon" > </a>
+
+        <a href="https://www.behance.net/santiagolopez33" target="_blank" rel="noopener noreferrer" class="i"> <img src="Images/Behance_logo.png" alt="behance icon" > </a>
+
+        <a href="https://www.instagram.com/sant1218/" target="_blank" rel="noopener noreferrer" class="i"> <img src="images/instagram_logo.png" alt="instagram icon"> </a>
+
+        <a href="https://www.linkedin.com/in/santiago-lopez-3a3a11270/" target="_blank" rel="noopener noreferrer" class="i"> <img src="images/LinkedIn_logo.png" alt="linkedin Icon">  </a>
+      </div>
+
+
+    </footer>
+
     
 
 
-    <!-- JavaScript de Bootstrap -->
+    <!-- JavaScript - Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
   </html>
